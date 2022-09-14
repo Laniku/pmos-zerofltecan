@@ -487,13 +487,13 @@ static void setup_fb_info(struct msmfb_info *msmfb)
 					   ((uint32_t)msmfb->yres << 16);
 	}
 
-	fb_info->var.red.offset = 11;
+	fb_info->var.red.offset = 8;
 	fb_info->var.red.length = 5;
 	fb_info->var.red.msb_right = 0;
-	fb_info->var.green.offset = 5;
+	fb_info->var.green.offset = 16;
 	fb_info->var.green.length = 6;
 	fb_info->var.green.msb_right = 0;
-	fb_info->var.blue.offset = 0;
+	fb_info->var.blue.offset = 24;
 	fb_info->var.blue.length = 5;
 	fb_info->var.blue.msb_right = 0;
 
